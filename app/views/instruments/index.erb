@@ -1,0 +1,11 @@
+<h1>This is the index page of instruments!</h1>
+
+<ul>
+  <% @instruments.each do |instrument_inst| %>
+    <li>
+      <a href="/instruments/<%= instrument_inst.id %>">
+        <%= instrument_inst.name %>
+      </a>
+    </li>
+  <% end %>
+</ul>
